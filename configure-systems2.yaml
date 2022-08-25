@@ -1,14 +1,14 @@
-# Playbook to call multiple roles to configure systems
-- name: Configure systems
-  hosts: 10.20.128.243
-  become: yes
+---
+- name: Configure Waystream MS4K
+  hosts: 10.20.128.107
+  gather_facts: False
+
+  vars:
+
+    ansible_connection: network_cli
+    ansible_network_os: asa
 
   tasks:
-
-- name: Call Roles
-  hosts: 10.20.128.243
-  roles:
-   #- hostname
-   #- firewalld
-   #- ntp-config
-   - motd
+  - name: delete fw
+    cli_command:
+      command: delete flash:ibos-ms4k-7.5.18-ED-R.bz2
