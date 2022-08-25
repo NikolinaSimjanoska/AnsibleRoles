@@ -11,4 +11,4 @@
   tasks:
   - name: delete fw
     cli_command:
-      command: delete flash:ibos-ms4k-7.5.11-ED-R.bz2
+      command: delete flash:ibos-ms4k-7.5.18-ED-R.bz2
