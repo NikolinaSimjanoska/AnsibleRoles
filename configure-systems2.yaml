@@ -11,5 +11,5 @@
   tasks:
   - name: delete fw
     cli_command:
-      command: delete flash:ibos-cma-7.5.18-ED-R.bz2
+      command: delete flash:ibos-cma-7.5.17-ED-R.bz2
 
