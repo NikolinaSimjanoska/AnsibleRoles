@@ -1,5 +1,6 @@
 ---
 - name: Configure Waystream MS4K
+  hosts: 10.20.128.108
   gather_facts: False
 
   vars:
